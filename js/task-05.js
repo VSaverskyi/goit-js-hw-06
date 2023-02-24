@@ -7,7 +7,7 @@ inputEl.addEventListener("input", makeMessage);
 
 function makeMessage(event) {
   if (event.currentTarget.value !== "") {
-    outputEl.textContent = event.currentTarget.value;
+    outputEl.textContent = event.currentTarget.value.trim();
     return;
   }
   outputEl.textContent = "Anonymous";
