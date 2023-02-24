@@ -3,9 +3,9 @@
 const inputEl = document.querySelector("#name-input");
 const outputEl = document.querySelector("#name-output");
 
-inputEl.addEventListener("input", makeMessage);
+inputEl.addEventListener("input", handleMakeMessage);
 
-function makeMessage(event) {
+function handleMakeMessage(event) {
   if (event.currentTarget.value !== "") {
     outputEl.textContent = event.currentTarget.value.trim();
     return;

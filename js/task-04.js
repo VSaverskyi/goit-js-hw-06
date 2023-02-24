@@ -11,15 +11,15 @@ const incrementBtnEl = counterEl.querySelector(
 );
 const spanEl = counterEl.querySelector("#value");
 
-decrementBtnEl.addEventListener("click", decrementValue);
-incrementBtnEl.addEventListener("click", incrementValue);
+decrementBtnEl.addEventListener("click", handleDecrementValue);
+incrementBtnEl.addEventListener("click", handleIncrementValue);
 
-function decrementValue() {
+function handleDecrementValue() {
   counterValue -= 1;
   spanEl.textContent = counterValue;
 }
 
-function incrementValue() {
+function handleIncrementValue() {
   counterValue += 1;
   spanEl.textContent = counterValue;
 }

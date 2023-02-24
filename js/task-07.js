@@ -3,9 +3,9 @@
 const rangeEl = document.querySelector("#font-size-control");
 const textEl = document.querySelector("#text");
 
-rangeEl.addEventListener("change", changeFontSize);
+rangeEl.addEventListener("change", handleChangeFontSize);
 
-function changeFontSize(event) {
+function handleChangeFontSize(event) {
   let fontSizeValue = Number(event.currentTarget.value);
   textEl.style.fontSize = `${fontSizeValue}px`;
 }

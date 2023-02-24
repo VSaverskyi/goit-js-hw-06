@@ -2,10 +2,10 @@
 
 const inputEl = document.querySelector("#validation-input");
 
-inputEl.addEventListener("blur", checkValidation);
+inputEl.addEventListener("blur", handleCheckValidation);
 const VALUE_LENGTH = inputEl.dataset.length;
 
-function checkValidation(event) {
+function handleCheckValidation(event) {
   const eventEl = event.currentTarget;
   const message = eventEl.value.trim();
 
